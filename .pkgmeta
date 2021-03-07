@@ -1,10 +1,11 @@
 package-as: TwitchEmotes_Solaris
 
-enable-nolib-creation: no
-
-move-folders: 
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
 
 ignore: 
     - .gitignore
     - README.md
     - LICENSE
+    - generate_changelog.sh
