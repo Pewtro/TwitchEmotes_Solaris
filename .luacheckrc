@@ -33,6 +33,7 @@ globals = {
     --Twitch Emotes v2
     "Emoticons_RegisterPack",
     "AllTwitchEmoteNames",
+    "TwitchEmotes_defaultpack",
 
     --Misc / Libs 
     "LibStub",
