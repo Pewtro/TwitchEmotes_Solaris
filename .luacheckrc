@@ -6,9 +6,11 @@ globals = {
 
     --Twitch Emotes v2
     "Emoticons_RegisterPack",
+    "AllTwitchEmoteNames",
 
-    --Misc
+    --Misc / Libs 
     "LibStub",
+    "SetupAutoComplete",
 
     --FrameXML Misc
     "CreateFrame",
