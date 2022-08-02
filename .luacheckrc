@@ -3,10 +3,16 @@ ignore = {
 	"212", -- Unused argument
 }
 globals = {
-    --Own SavedVariables
-    "TwitchEmotes_Solaris_Settings",
+    -- OWN --
+    --Emotes
+    "TwitchEmotes_Solaris_Emoticons",
     "TwitchEmotes_Solaris_Emoticons_Pack",
-    
+    --Others
+    "TwitchEmotes_Solaris_Settings",
+    "TwitchEmotes_Solaris_RenderSuggestion",
+
+    -- OTHERS -- 
+
     --Twitch Emotes v2
     "Emoticons_RegisterPack",
     "AllTwitchEmoteNames",
@@ -17,4 +23,7 @@ globals = {
 
     --FrameXML Misc
     "CreateFrame",
+
+    --Blizz
+    "NUM_CHAT_WINDOWS",
 }

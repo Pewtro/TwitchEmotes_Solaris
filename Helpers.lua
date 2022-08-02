@@ -8,12 +8,30 @@ local function tablelength(T)
     return count
   end
 
+  --this function transforms the text in the autocomplete suggestions (we add the emote image here)
+function TwitchEmotes_Solaris_RenderSuggestion(text)
+    local fullEmotePath = TwitchEmotes_Solaris_Emoticons_Pack[text];
+    if (not fullEmotePath) then
+       fullEmotePath = TwitchEmotes_defaultpack[text]
+    end
+    if(fullEmotePath ~= nil) then
+        local size = string.match(fullEmotePath, ":(.*)")
+        local path_and_size = "";
+        if(size ~= nil) then
+            path_and_size = string.gsub(fullEmotePath, size, "16:16")
+        else
+            path_and_size = fullEmotePath .. "16:16";
+        end
+        return "|T".. path_and_size .."|t " .. text;
+    end
+end
+
 function TwitchEmotes_Solaris:SetAutoComplete(state)
     TwitchEmotes_Solaris_Settings["FEAT_AUTOCOMPLETE"] = state
 
     if TwitchEmotes_Solaris_Settings["FEAT_AUTOCOMPLETE"] and not autocompleteInited then
         local i = tablelength(AllTwitchEmoteNames);
-        for k, v in pairs(TwitchEmotes_Solaris_Emoticons_Pack) do
+        for k, _ in pairs(TwitchEmotes_Solaris_Emoticons_Pack) do
             AllTwitchEmoteNames[i] = k;
             i = i + 1;
         end
@@ -61,20 +79,3 @@ function TwitchEmotes_Solaris:SetAutoComplete(state)
 end
 
 
---this function transforms the text in the autocomplete suggestions (we add the emote image here)
-local function TwitchEmotes_Solaris_RenderSuggestion(text)
-    local fullEmotePath = TwitchEmotes_Solaris_Emoticons_Pack[text];
-    if (not fullEmotePath) then
-       fullEmotePath = TwitchEmotes_defaultpack[text]
-    end
-    if(fullEmotePath ~= nil) then
-        local size = string.match(fullEmotePath, ":(.*)")
-        local path_and_size = "";
-        if(size ~= nil) then
-            path_and_size = string.gsub(fullEmotePath, size, "16:16")
-        else
-            path_and_size = fullEmotePath .. "16:16";
-        end
-        return "|T".. path_and_size .."|t " .. text;
-    end
-end
