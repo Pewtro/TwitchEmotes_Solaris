@@ -146,11 +146,11 @@ function TwitchEmotes_Solaris:ShowInterface()
         print("initializing frames")
         framesInitialized = true
     end
-    print("show interface")
     local isShown = false
     if isShown then
         TwitchEmotes_Solaris:HideInterface()
     else
+        print("show interface")
         --some command to show interface
     end
     
