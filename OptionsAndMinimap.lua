@@ -1,27 +1,53 @@
 ---@diagnostic disable: deprecated
 local AddonName, TwitchEmotes_Solaris = ...
 
+local LDB = LibStub("LibDataBroker-1.1")
+local LDBIcon = LibStub("LibDBIcon-1.0")
+
+TwitchEmotes_Solaris_Settings = {
+    ["MINIMAP_SHOW"] = false,
+    ["MINIMAP_LOCK"] = false,
+    ["MINIMAP_DATA"] = { 
+        minimapPos = 130
+    },
+
+    --Features 
+    ["FEAT_AUTOCOMPLETE"] = true,
+    ["FEAT_AUTOCOPLETE_WITH_TAB"] = false,
+}
+
+local defaultSettings = {
+    ["MINIMAP_SHOW"] = false, --TODO
+    ["MINIMAP_LOCK"] = false,
+    ["MINIMAP_DATA"] = { 
+        minimapPos = 130
+    },
+
+    ["FEAT_AUTOCOMPLETE"] = true,
+    ["FEAT_AUTOCOPLETE_WITH_TAB"] = false, --TODO
+}
+
 -- Main Frame settings
-TwitchEmotes_Solaris.BackdropColor = {0.058823399245739, 0.058823399245739, 0.058823399245739, 0.9}
 
 -- Create minimap button
 local minimapHeadingColor = "|cFFFFFFFF"
+local minimapIconRegistered = false
 
-local icon = LibStub("LibDBIcon-1.0")
-local db
-local LDB = LibStub("LibDataBroker-1.1"):NewDataObject("TwitchEmotes_Solaris", {
+local Broker_TwitchEmotes_Solaris = LDB:NewDataObject("TwitchEmotes_Solaris", {
     type = "data source",
     text = "Twitch Emotes Solaris",
     icon = "Interface\\AddOns\\"..AddonName.."\\UI\\solaris",
     OnClick = function(_, buttonPressed)
         if buttonPressed == "RightButton" then
-            if db.minimap.lock then
-                icon:Unlock("TwitchEmotes_Solaris")
+            if TwitchEmotes_Solaris_Settings["MINIMAP_LOCK"] then
+                LDBIcon:Unlock("TwitchEmotes_Solaris")
+                TwitchEmotes_Solaris_Settings["MINIMAP_LOCK"] = false
             else
-                icon:Lock("TwitchEmotes_Solaris")
+                LDBIcon:Lock("TwitchEmotes_Solaris")
+                TwitchEmotes_Solaris_Settings["MINIMAP_LOCK"] = true
             end
-        else
-            TwitchEmotes_Solaris:ShowInterface()
+        -- else
+        --    TwitchEmotes_Solaris:ShowInterface()
         end
     end,
     OnTooltipShow = function(tooltip)
@@ -29,20 +55,12 @@ local LDB = LibStub("LibDataBroker-1.1"):NewDataObject("TwitchEmotes_Solaris", {
             return
         end
         tooltip:AddLine(minimapHeadingColor .. "Twitch Emotes Solaris|r")
-        tooltip:AddLine("Click to toggle AddOn Window")
+        --tooltip:AddLine("Click to toggle AddOn Window")
         tooltip:AddLine("Right-click to lock Minimap Button")
     end
 })
 
 -- Init
-local defaultSavVar = {
-    global = {
-        minimap = {
-            hide = false
-        },
-        scale = 1,
-    }
-}
 do
     local frame = CreateFrame("Frame")
     frame:RegisterEvent("ADDON_LOADED")
@@ -52,17 +70,42 @@ do
 
     function TwitchEmotes_Solaris.ADDON_LOADED(self, addon)
         if addon == "TwitchEmotes_Solaris" then
-            db = LibStub("AceDB-3.0"):New("TwitchEmotes_SolarisDB", defaultSavVar).global
-            icon:Register("TwitchEmotes_Solaris", LDB, db.minimap)
-            if not db.minimap.hide then
-                icon:Show("TwitchEmotes_Solaris")
+            -- Ensure defaults if nil
+            for k, v in pairs(defaultSettings) do
+                if (TwitchEmotes_Solaris_Settings[k] == nil) then
+                    TwitchEmotes_Solaris_Settings[k] = v;
+                end
             end
-        end
-        TwitchEmotes_Solaris:RegisterOptions()
-        self:UnregisterEvent("ADDON_LOADED")
+            
+            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
+            minimapIconRegistered = true
+            
+            TwitchEmotes_Solaris:SetMinimapButton(TwitchEmotes_Solaris_Settings["MINIMAP_SHOW"])
+            TwitchEmotes_Solaris:SetAutoComplete(TwitchEmotes_Solaris_Settings["FEAT_AUTOCOMPLETE"])
 
+            --TODO
+            --TwitchEmotes_Solaris:RegisterOptions()
+            self:UnregisterEvent("ADDON_LOADED")
+        end
     end
 end
+
+function TwitchEmotes_Solaris:SetMinimapButton(state)
+    TwitchEmotes_Solaris_Settings["MINIMAP_SHOW"] = state;
+
+    if(state) then
+
+        if not minimapIconRegistered then
+            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
+            minimapIconRegistered = true
+        end
+
+        LDBIcon:Show("TwitchEmotes_Solaris")
+    else
+        LDBIcon:Hide("TwitchEmotes_Solaris")
+    end
+end
+
 
 function TwitchEmotes_Solaris:RegisterOptions()
     TwitchEmotes_Solaris.blizzardOptionsTable = {
@@ -74,14 +117,14 @@ function TwitchEmotes_Solaris:RegisterOptions()
                 name = "Enable Minimap Button",
                 desc = "If the Minimap Button is enabled",
                 get = function()
-                    return not db.minimap.hide
+                    return TwitchEmotes_Solaris_Settings["MINIMAP_SHOW"]
                 end,
                 set = function(_, newValue)
-                    db.minimap.hide = not newValue
-                    if not db.minimap.hide then
-                        icon:Show("TwitchEmotes_Solaris")
+                    TwitchEmotes_Solaris_Settings["MINIMAP_SHOW"] = newValue
+                    if TwitchEmotes_Solaris_Settings["MINIMAP_SHOW"] then
+                        LDBIcon:Show("TwitchEmotes_Solaris")
                     else
-                        icon:Hide("TwitchEmotes_Solaris")
+                        LDBIcon:Hide("TwitchEmotes_Solaris")
                     end
                 end,
                 order = 1,
@@ -102,17 +145,17 @@ function TwitchEmotes_Solaris:ShowInterface()
         framesInitialized = true
     end
     print("show interface")
-    --[[
-    if self.main_frame:IsShown() then
+    local isShown = false
+    if isShown then
         TwitchEmotes_Solaris:HideInterface()
     else
-        self.main_frame:Show()
+        --some command to show interface
     end
-    --]]
+    
 end
 
---[[
+
 function TwitchEmotes_Solaris:HideInterface()
-    self.main_frame:Hide()
+    print("hide interface")
+    -- some command to hide interface
 end
---]]

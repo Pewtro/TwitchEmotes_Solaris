@@ -1,5 +1,4 @@
-
-local solarisEmoticons = {
+TwitchEmotes_Solaris_Emoticons = {
     ["ayayaKMS"] = "ayayaKMS",
     ["AzorCool"] = "AzorCool",
     ["Bedge"] = "Bedge",
@@ -59,6 +58,7 @@ local solarisEmoticons = {
     ["sheepoHug"] = "sheepoHug",
     ["sheepoHugBerry"] = "sheepoHugBerry",
     ["smoge"] = "smoge",
+    ["speedge"] = "speedge",
     ["susge"] = "susge",
     ["thinkiong"] = "thinkiong",
     ["THYMINDE"] = "THYMINDE",
@@ -86,7 +86,7 @@ local solarisEmoticons = {
 }
 
 
-local solarisPack = {
+TwitchEmotes_Solaris_Emoticons_Pack = {
     ["ayayaKMS"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\ayayaKMS.tga:28:28",
     ["AzorCool"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\AzorCool.tga:28:28",
     ["Bedge"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\Bedge.tga:28:28",
@@ -146,6 +146,7 @@ local solarisPack = {
     ["sheepoHug"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\sheepoHug.tga:28:28",
     ["sheepoHugBerry"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\sheepoHugBerry.tga:28:28",
     ["smoge"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\smoge.tga:28:28",
+    ["speedge"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\speedge.tga:28:28",
     ["susge"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\susge.tga:28:28",
     ["thinkiong"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\thinkiong.tga:28:28",
     ["THYMINDE"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\THYMINDE.tga:28:28",
@@ -163,9 +164,3 @@ local solarisPack = {
     ["WideAYAYA"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\WideAYAYA.tga:28:128",
     ["WideDistortedWeird"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\WideDistortedWeird.tga:28:128",
 }
-
-local function addEmotePacks()
-    Emoticons_RegisterPack("TwitchEmotes_Solaris", solarisEmoticons, solarisPack)
-end
-
-addEmotePacks()
