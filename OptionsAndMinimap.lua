@@ -77,7 +77,8 @@ do
                 end
             end
             
-            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
+            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, 
+                TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
             minimapIconRegistered = true
             
             TwitchEmotes_Solaris:SetMinimapButton(TwitchEmotes_Solaris_Settings["MINIMAP_SHOW"])
@@ -96,7 +97,8 @@ function TwitchEmotes_Solaris:SetMinimapButton(state)
     if(state) then
 
         if not minimapIconRegistered then
-            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
+            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, 
+                TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
             minimapIconRegistered = true
         end
 

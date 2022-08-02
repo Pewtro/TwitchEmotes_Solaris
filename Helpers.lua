@@ -1,8 +1,8 @@
-local AddonName, TwitchEmotes_Solaris = ...
+local _, TwitchEmotes_Solaris = ...
 
 local autocompleteInited = false
 
-function tablelength(T)
+local function tablelength(T)
     local count = 0
     for _ in pairs(T) do count = count + 1 end
     return count
@@ -12,7 +12,6 @@ function TwitchEmotes_Solaris:SetAutoComplete(state)
     TwitchEmotes_Solaris_Settings["FEAT_AUTOCOMPLETE"] = state
 
     if TwitchEmotes_Solaris_Settings["FEAT_AUTOCOMPLETE"] and not autocompleteInited then
-        
         local i = tablelength(AllTwitchEmoteNames);
         for k, v in pairs(TwitchEmotes_Solaris_Emoticons_Pack) do
             AllTwitchEmoteNames[i] = k;
@@ -63,7 +62,7 @@ end
 
 
 --this function transforms the text in the autocomplete suggestions (we add the emote image here)
-function TwitchEmotes_Solaris_RenderSuggestion(text)
+local function TwitchEmotes_Solaris_RenderSuggestion(text)
     local fullEmotePath = TwitchEmotes_Solaris_Emoticons_Pack[text];
     if (not fullEmotePath) then
        fullEmotePath = TwitchEmotes_defaultpack[text]
