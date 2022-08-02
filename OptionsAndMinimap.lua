@@ -7,11 +7,11 @@ local LDBIcon = LibStub("LibDBIcon-1.0")
 TwitchEmotes_Solaris_Settings = {
     ["MINIMAP_SHOW"] = false,
     ["MINIMAP_LOCK"] = false,
-    ["MINIMAP_DATA"] = { 
+    ["MINIMAP_DATA"] = {
         minimapPos = 130
     },
 
-    --Features 
+    --Features
     ["FEAT_AUTOCOMPLETE"] = true,
     ["FEAT_AUTOCOPLETE_WITH_TAB"] = false,
 }
@@ -77,7 +77,7 @@ do
                 end
             end
             
-            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, 
+            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris,
                 TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
             minimapIconRegistered = true
             
@@ -97,7 +97,7 @@ function TwitchEmotes_Solaris:SetMinimapButton(state)
     if(state) then
 
         if not minimapIconRegistered then
-            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris, 
+            LDBIcon:Register("TwitchEmotes_Solaris", Broker_TwitchEmotes_Solaris,
                 TwitchEmotes_Solaris_Settings["MINIMAP_DATA"])
             minimapIconRegistered = true
         end
