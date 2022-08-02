@@ -19,7 +19,7 @@ TwitchEmotes_Solaris_Settings = {
 local defaultSettings = {
     ["MINIMAP_SHOW"] = false, --TODO
     ["MINIMAP_LOCK"] = false,
-    ["MINIMAP_DATA"] = { 
+    ["MINIMAP_DATA"] = {
         minimapPos = 130
     },
 
