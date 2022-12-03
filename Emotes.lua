@@ -4,10 +4,11 @@ TwitchEmotes_Solaris_Emoticons = {
     ["Bedge"] = "Bedge",
     ["blobby"] = "blobby",
     ["blusherBucket"] = "blusherBucket",
-	["BlushPJ"] = "BlushPJ",
-	["BruhScuff"] = "BruhScuff",
+    ["BlushPJ"] = "BlushPJ",
+    ["BruhScuff"] = "BruhScuff",
     ["catDisgust"] = "catDisgust",
     [":clueless:"] = "CLUELESS",
+    ["CLUELESS"] = "CLUELESS",
     ["comfyBlushSip"] = "comfyBlushSip",
     ["Copium"] = "Copium",
     ["cozyFriends"] = "cozyFriends",
@@ -42,9 +43,9 @@ TwitchEmotes_Solaris_Emoticons = {
     ["peepoRecline"] = "peepoRecline",
     ["peepoShy"] = "peepoShy",
     ["peepoSmiles"] = "peepoSmiles",
-	["peepoStrawberry"] ="peepoStrawberry",
-    ["peepoSweat"] ="peepoSweat",
-    ["peepoWhat"] ="peepoWhat",
+    ["peepoStrawberry"] = "peepoStrawberry",
+    ["peepoSweat"] = "peepoSweat",
+    ["peepoWhat"] = "peepoWhat",
     ["pepeComfy"] = "pepeComfy",
     ["pepeDepressed"] = "pepeDepressed",
     ["pepeEmu"] = "pepeEmu",
@@ -72,33 +73,29 @@ TwitchEmotes_Solaris_Emoticons = {
     ["WannaFight"] = "WannaFight",
     ["Wokege"] = "Wokege",
     ["YEPSOCK"] = "YEPSOCK",
-
     -- Large Emotes
     ["ayayaKMSW"] = "ayayaKMSW",
     ["AYAYAW"] = "AYAYAW",
     ["FeelsIonManW"] = "FeelsIonManW",
-
     -- Wide Emotes
     ["WideAYAYA"] = "WideAYAYA",
     ["WideDistortedWeird"] = "WideDistortedWeird",
-
     -- Alternatives
     ["FUCKKINTARK"] = "comfyBlushSip",
     ["letsgo"] = "LETSGO",
     ["maan"] = "MAAAN",
     ["maaan"] = "MAAAN",
     ["MAAN"] = "MAAAN",
-    ["NYOO"] = "nyoo",
+    ["NYOO"] = "nyoo"
 }
-
 
 TwitchEmotes_Solaris_Emoticons_Pack = {
     ["ayayaKMS"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\ayayaKMS.tga:28:28",
     ["AzorCool"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\AzorCool.tga:28:28",
     ["Bedge"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\Bedge.tga:28:28",
     ["blusherBucket"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\blusherBucket.tga:28:28",
-	["BlushPJ"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\BlushPJ.tga:28:28",
-	["BruhScuff"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\BruhScuff.tga:28:28",
+    ["BlushPJ"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\BlushPJ.tga:28:28",
+    ["BruhScuff"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\BruhScuff.tga:28:28",
     ["catDisgust"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\catDisgust.tga:28:28",
     ["CLUELESS"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\CLUELESS.tga:28:28",
     ["comfyBlushSip"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\comfyBlushSip.tga:28:28",
@@ -135,7 +132,7 @@ TwitchEmotes_Solaris_Emoticons_Pack = {
     ["peepoRecline"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\peepoRecline.tga:28:28",
     ["peepoShy"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\peepoShy.tga:28:28",
     ["peepoSmiles"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\peepoSmiles.tga:28:28",
-	["peepoStrawberry"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\peepoStrawberry.tga:28:28",
+    ["peepoStrawberry"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\peepoStrawberry.tga:28:28",
     ["peepoSweat"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\peepoSweat.tga:28:28",
     ["peepoWhat"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\peepoWhat.tga:28:28",
     ["pepeComfy"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\pepeComfy.tga:28:28",
@@ -165,13 +162,11 @@ TwitchEmotes_Solaris_Emoticons_Pack = {
     ["WannaFight"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\WannaFight.tga:28:28",
     ["Wokege"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\Wokege.tga:28:28",
     ["YEPSOCK"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\YEPSOCK.tga:28:28",
-
     -- Large Emotes
     ["ayayaKMSW"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\large\\ayayaKMSW.tga:LARGE",
     ["AYAYAW"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\large\\AYAYAW.tga:LARGE",
     ["FeelsIonManW"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\large\\FeelsIonManW.tga:LARGE",
-
     -- Wide Emotes
     ["WideAYAYA"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\WideAYAYA.tga:28:128",
-    ["WideDistortedWeird"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\WideDistortedWeird.tga:28:128",
+    ["WideDistortedWeird"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\WideDistortedWeird.tga:28:128"
 }
