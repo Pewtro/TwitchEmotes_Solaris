@@ -73,6 +73,7 @@ TwitchEmotes_Solaris_Emoticons = {
     ["THYMINDE"] = "THYMINDE",
     ["typingHappy"] = "typingHappy",
     ["WannaFight"] = "WannaFight",
+    ["whatvr"] = "whatvr",
     ["Wokege"] = "Wokege",
     ["YEPSOCK"] = "YEPSOCK",
     -- Large Emotes
@@ -164,6 +165,7 @@ TwitchEmotes_Solaris_Emoticons_Pack = {
     ["THYMINDE"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\THYMINDE.tga:28:28",
     ["typingHappy"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\typingHappy.tga:28:28",
     ["WannaFight"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\WannaFight.tga:28:28",
+    ["whatvr"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\whatvr.tga:28:28",
     ["Wokege"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\Wokege.tga:28:28",
     ["YEPSOCK"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\YEPSOCK.tga:28:28",
     -- Large Emotes
