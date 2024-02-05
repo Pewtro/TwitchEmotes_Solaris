@@ -1,7 +1,7 @@
 ## Interface: 30403
 ## Title: TwitchEmotes_Solaris
 ## Author: Putro
-## Version: 1.3.16
+## Version: 1.3.18
 ## SavedVariables: TwitchEmotes_Solaris_Settings
 ## X-Curse-Project-ID: 453608
 ## OptionalDeps: Ace3
