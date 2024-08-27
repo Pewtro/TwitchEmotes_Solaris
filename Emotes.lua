@@ -24,6 +24,8 @@ TwitchEmotes_Solaris_Emoticons = {
     ["happyAwesome"] = "happyAwesome",
     ["HappyPeepoFarmer"] = "HappyPeepoFarmer",
     ["HHHHHHHHHHHHH"] = "HHHHHHHHHHHHH",
+    ["IMFINE"] = "IMFINE",
+    ["KKonaU"] = "KKonaU",
     ["LETSGO"] = "LETSGO",
     ["Life"] = "Life",
     ["MAAAN"] = "MAAAN",
@@ -88,6 +90,7 @@ TwitchEmotes_Solaris_Emoticons = {
     ["AYAYAW"] = "AYAYAW",
     ["FeelsIonManW"] = "FeelsIonManW",
     -- Wide Emotes
+    ["KINO"] = "KINO",
     ["WideAYAYA"] = "WideAYAYA",
     ["WideDistortedWeird"] = "WideDistortedWeird",
     -- Alternatives
@@ -123,6 +126,8 @@ TwitchEmotes_Solaris_Emoticons_Pack = {
     ["happyAwesome"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\happyAwesome.tga:28:28",
     ["HappyPeepoFarmer"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\HappyPeepoFarmer.tga:28:28",
     ["HHHHHHHHHHHHH"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\HHHHHHHHHHHHH.tga:28:28",
+    ["IMFINE"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\IMFINE.tga:28:28",
+    ["KKonaU"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\KKonaU.tga:28:28",
     ["LETSGO"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\LETSGO.tga:28:28",
     ["Life"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\Life.tga:28:28",
     ["MAAAN"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\MAAAN.tga:28:28",
@@ -187,6 +192,7 @@ TwitchEmotes_Solaris_Emoticons_Pack = {
     ["AYAYAW"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\large\\AYAYAW.tga:LARGE",
     ["FeelsIonManW"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\large\\FeelsIonManW.tga:LARGE",
     -- Wide Emotes
+    ["KINO"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\KINO.tga:28:128",
     ["WideAYAYA"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\WideAYAYA.tga:28:128",
     ["WideDistortedWeird"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\wide\\WideDistortedWeird.tga:28:128"
 }
