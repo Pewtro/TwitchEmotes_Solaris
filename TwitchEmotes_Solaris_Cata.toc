@@ -1,4 +1,4 @@
-## Interface: 40400
+## Interface: 40401
 ## Title: TwitchEmotes_Solaris
 ## Author: Putro
 ## Version: 1.6.0
