@@ -1,4 +1,4 @@
-## Interface: 110205
+## Interface: 120000
 ## Title: TwitchEmotes_Solaris
 ## Author: Putro
 ## Version: 1.9.0
@@ -13,4 +13,5 @@ libs\AceConfig-3.0\AceConfig-3.0.xml
 Emotes.lua
 Core.lua
 Init_Emotes.lua
+
 Helpers.lua
