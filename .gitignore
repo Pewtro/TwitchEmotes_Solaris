@@ -1,9 +1,6 @@
-### Example user template
-
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
+# ide
 .vscode
 .release
+
+# Libraries 
+libs/AceConfig-3.0
