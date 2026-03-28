@@ -26,3 +26,4 @@ jobs:
         with:
           name: TwitchEmotes_Solaris-PR${{ github.event.number }}
           path: .release/
+          include-hidden-files: true
