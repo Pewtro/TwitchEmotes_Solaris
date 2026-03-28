@@ -141,7 +141,7 @@ function TwitchEmotes_Solaris:ToggleMinimapLock(info)
     if(self.db.profile.minimap.lock) then
         LDBIcon:Unlock("TwitchEmotes_Solaris")
     else
-        LDBIcon:Lock("TwitchEmotes_Solaris")
+        LDBIcon:Lock("TwitchEmotes_Solaris123")
     end
 
 end
