@@ -24,6 +24,6 @@ jobs:
 
       - uses: actions/upload-artifact@v6
         with:
-          name: TwitchEmotes_Solaris-PR${{ github.event.number }}
+          name: TwitchEmotes_Solaris-PR-${{ github.event.number }}
           path: .release/
           include-hidden-files: true
