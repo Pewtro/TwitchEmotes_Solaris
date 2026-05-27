@@ -1,4 +1,6 @@
 TwitchEmotes_Solaris_Emoticons = {
+    ["ALOO"] = "ALOO",
+    ["Aloowo"] = "Aloowo",
     ["ayayaKMS"] = "ayayaKMS",
     ["AzorCool"] = "AzorCool",
     ["Bedge"] = "Bedge",
@@ -111,6 +113,8 @@ TwitchEmotes_Solaris_Emoticons = {
 }
 
 TwitchEmotes_Solaris_Emoticons_Pack = {
+    ["ALOO"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\ALOO.tga:28:28",
+    ["Aloowo"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\Aloowo.tga:28:28",
     ["ayayaKMS"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\ayayaKMS.tga:28:28",
     ["AzorCool"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\AzorCool.tga:28:28",
     ["Bedge"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\emotes\\Bedge.tga:28:28",
