@@ -242,8 +242,4 @@ loader:SetScript("OnEvent", function(_, _, addonName)
     end
 end)
 
-C_Timer.After(0, function()
-    SolarisAnimator:Initialize()
-end)
-
 _G.SolarisAnimator = SolarisAnimator
