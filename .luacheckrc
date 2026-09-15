@@ -52,8 +52,8 @@ globals = {
     "CreateFrame",
 
     --Blizz
-    "hooksecurefunc"
+    "hooksecurefunc",
     "InterfaceOptionsFrame_OpenToCategory",
     "issecretvalue",
-    "NUM_CHAT_WINDOWS",
+    "NUM_CHAT_WINDOWS"
 }
