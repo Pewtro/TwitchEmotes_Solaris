@@ -26,17 +26,20 @@ ignore = {
 globals = {
     -- OWN --
     --Emotes
-    "TwitchEmotes_Solaris_Emoticons",
+    "TwitchEmotes_BuildEmoteFrameString",
+    "TwitchEmotes_Solaris_Animation_Metadata",
     "TwitchEmotes_Solaris_Emoticons_Pack",
-    --Addon
-    "TwitchEmotes_Solaris",
+    "TwitchEmotes_Solaris_Emoticons",
     "TwitchEmotes_Solaris_RenderSuggestion",
+    "TwitchEmotes_Solaris",
 
     -- OTHERS -- 
-
     --Twitch Emotes v2
-    "Emoticons_RegisterPack",
     "AllTwitchEmoteNames",
+    "Emoticons_RegisterPack",
+    "TwitchEmotes_animation_metadata",
+    "TwitchEmotes_BuildEmoteFrameString",
+    "TwitchEmotes_BuildEmoteFrameStringWithDimensions",
     "TwitchEmotes_defaultpack",
 
     --Misc / Libs 
@@ -48,5 +51,6 @@ globals = {
 
     --Blizz
     "NUM_CHAT_WINDOWS",
-    "InterfaceOptionsFrame_OpenToCategory"
+    "InterfaceOptionsFrame_OpenToCategory",
+    "issecretvalue"
 }
