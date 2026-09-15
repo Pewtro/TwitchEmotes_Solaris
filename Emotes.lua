@@ -94,7 +94,8 @@ TwitchEmotes_Solaris_Emoticons = {
     ["susge"] = "susge",
     ["SUSS"] = "SUSS",
     ["svCheer"] = "svCheer",
-    ["THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE"] = "THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE",
+    ["THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE"] = 
+        "THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE",
     ["thinkiong"] = "thinkiong",
     ["THYMINDE"] = "THYMINDE",
     ["Tomfoolery"] = "Tomfoolery",
@@ -296,7 +297,8 @@ TwitchEmotes_Solaris_Emoticons_Pack = {
     ["susge"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\susge.tga:28:28",
     ["SUSS"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\SUSS.tga:28:28",
     ["svCheer"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\svCheer.tga:28:28",
-    ["THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE.tga:28:28",
+    ["THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE"] = 
+        "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\THEINDUSTRIALREVOLUTIONANDITSCONSEQUENCESHAVEBEENADISASTERFORTHEHUMANRACE.tga:28:28",
     ["thinkiong"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\thinkiong.tga:28:28",
     ["THYMINDE"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\THYMINDE.tga:28:28",
     ["Tomfoolery"] = "Interface\\AddOns\\TwitchEmotes_Solaris\\Emotes\\Tomfoolery.tga:28:28",
