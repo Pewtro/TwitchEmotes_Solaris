@@ -41,6 +41,8 @@ globals = {
     "TwitchEmotes_BuildEmoteFrameString",
     "TwitchEmotes_BuildEmoteFrameStringWithDimensions",
     "TwitchEmotes_defaultpack",
+    "TwitchEmotes_GetCurrentFrameNum",
+    "TwitchEmotesAnimator_UpdateEmoteInFontString",
 
     --Misc / Libs 
     "LibStub",
@@ -50,7 +52,8 @@ globals = {
     "CreateFrame",
 
     --Blizz
-    "NUM_CHAT_WINDOWS",
+    "hooksecurefunc"
     "InterfaceOptionsFrame_OpenToCategory",
-    "issecretvalue"
+    "issecretvalue",
+    "NUM_CHAT_WINDOWS",
 }
